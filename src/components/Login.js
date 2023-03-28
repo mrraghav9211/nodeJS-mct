@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style/login.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -10,8 +10,6 @@ const Login = () => {
   const [password, setPassword] = useState();
 
   const authUser = async () => {
-    console.log("login clicked");
-    console.log(typeof password);
     try {
       const config = {
         headers: {
@@ -31,7 +29,6 @@ const Login = () => {
 
       console.log(error);
     }
-    console.log("login ended");
   };
   return (
     <div className="login-container">
@@ -50,8 +47,15 @@ const Login = () => {
         <br />
         <div className="btn-detail">
           <button onClick={authUser}>LOGIN</button>
-          <button>CREATE ACCOUNT</button>
+          <Link to="/signup"><button>SIGNUP</button></Link>
         </div>
+        <div className="other-login-method">
+        <p>or login with</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>Facebook</span>
+        <span>Google</span>
+      </div>
       </section>
       <section className="right-section">
         <img
@@ -59,6 +63,7 @@ const Login = () => {
           alt=""
         />
       </section>
+      
     </div>
   );
 };

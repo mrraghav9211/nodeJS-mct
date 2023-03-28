@@ -1,0 +1,30 @@
+.productdetail-container{
+    /* display: none; */
+    width: 80vw;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+.productdetail-container h1{
+    text-align: center;
+    background-color: rgb(42, 228, 123);
+}
+.flex{
+    display: flex;
+}
+.left{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left img{
+    width: 200px;
+    height: 300px;
+}
+.right{
+    width: 70%;
+}
+.right h3{
+    line-height: 0px;
+}

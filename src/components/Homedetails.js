@@ -15,7 +15,6 @@ const Homedetails = () => {
     useEffect(() => {
         fetchHomeDetails()
     }, [])
-    console.log(details)
   return (
     !loading ? <Loading/>
         :

@@ -1,8 +1,9 @@
 .login-container{
     display: flex;
-    
     width: 70vw;
-    margin: auto;
+    position: absolute;
+    left: 15vw;
+    top: 15vh;
     border-radius: 5px;
     border: 1px solid gray;
 }
@@ -12,6 +13,11 @@
 }
 .left-section input{
     width: 70%;
+    padding: 10px;
+}
+.left-section select{
+    width: 70%;
+    padding: 10px;
 }
 .right-section{
     width: 50%;
@@ -19,8 +25,30 @@
 }
 .right-section img{
     width: 100%;
-    height: 400px;
+    height: 100%;
+}
+.btn-detail{
+    width: 100%;
 }
 .btn-detail button{
+    cursor: pointer;
+    width: 30%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: rgb(230, 23, 168);
+    border: 1px solid rgb(230, 23, 168);
+    border-radius: 5px;
+    margin-left: 17px;
+}
+.other-login-method{
+    width: 70%;
+}
+.other-login-method p{
+    text-align: center;
+}
+.other-login-method span{
+    color:  rgb(230, 23, 168);
+    margin-left: 2%;
     cursor: pointer;
 }
