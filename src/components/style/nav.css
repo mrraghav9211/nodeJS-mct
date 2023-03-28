@@ -1,0 +1,17 @@
+.nav-container{
+        background-color: rgb(63, 60, 53);
+        height: 10vh;
+        width: 100%;
+}
+.nav-container ul{
+    display: inline-flex;
+    float: right;
+    margin-right: 2rem;
+}
+.nav-container ul li{
+    list-style-type: none;
+    margin-left: 4rem;
+    /* margin-right: 1rem; */
+    color: white;
+    cursor: pointer;
+}
